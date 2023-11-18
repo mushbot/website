@@ -21,10 +21,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<head>
-				<link ref="icon" href="/logo.png" />
-				<title>Zeyr | Discord bot</title>
-			</head>
+			<head />
 			<ThemeProvider
 				attribute="class"
 				defaultTheme="system"
