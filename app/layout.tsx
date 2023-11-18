@@ -7,20 +7,7 @@ import "./globals.css";
 
 import { CookieAlert } from "@/components/cookies";
 import Logo from "@/public/logo.png";
-import type { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-	title: "Zeyr | Discord bot",
-	description:
-		"Zeyr is a powerful and versatile Discord bot designed to enhance yourserver experience.",
-	twitter: {
-		images: ["https://zeyr.vercel.app/logo.png"],
-	},
-	openGraph: {
-		type: "website",
-	},
-};
 
 export const fontSans = FontSans({
 	subsets: ["latin"],
@@ -34,8 +21,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<head />
-			<link ref="icon" href="/logo.png" />
+			<head>
+				<link ref="icon" href="/logo.png" />
+				<title>Zeyr | Discord bot</title>
+			</head>
 			<ThemeProvider
 				attribute="class"
 				defaultTheme="system"
