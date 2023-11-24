@@ -22,11 +22,14 @@ export default function Page() {
 		<>
 			{added === "yes" && <AddedModal />}
 			<section className="flex max-w-[980px] flex-col items-start gap-2 px-4 pt-8 md:pt-12 pb-8">
-				<Badge variant={"secondary"} className="text-sm lg:text-md">
-					Zeyr releasing soon <ArrowRight className="ml-2 w-4" />
+				<Badge variant={"outline"} className="text-sm lg:text-md">
+					<Badge variant={"default"} className="text-xs my-1 mr-2">
+						NEW
+					</Badge>{" "}
+					Zeyr launching soon!
 				</Badge>
-				<h1 className="text-2xl lg:text-4xl font-black">
-					Imagine a bot for <p className="text-primary">everything</p>
+				<h1 className="text-2xl lg:text-4xl font-black flex items-center gap-2">
+					Imagine a bot for <p className="text-sky-400">everything</p>
 				</h1>
 				<span className="max-w-[750px] lg:text-md text-muted-foreground text-sm">
 					Zeyr is a powerful and versatile Discord bot designed to enhance your
@@ -44,7 +47,7 @@ export default function Page() {
 						<Minus className="w-5 text-amber-500" /> Code execution
 					</div>
 				</div>
-				<div className="lg:flex space-y-3 block lg:flex-row items-center gap-2">
+				<div className="lg:flex space-y-3 lg:space-y-0 block lg:flex-row items-center gap-2">
 					<Link target="_blank" href="https://discord.gg/3N8zt3PhWC">
 						<Button className="lg:w-min w-full">
 							<MessageCircle className="mr-2 h-4 w-4" /> Join chat
